@@ -1,0 +1,23 @@
+﻿<Window x:Class="shop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="205*"/>
+            <RowDefinition Height="429*"/>
+        </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Center" Height="452" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" Stroke="#FF8E7979" Fill="#FFD6D6D6" Grid.RowSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="150" Margin="42,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8"/>
+        <Image HorizontalAlignment="Left" Height="75" Margin="54,45,0,0" VerticalAlignment="Top" Width="75" Source="IMG/margarita.png"/>
+        <TextBlock x:Name="MRGT" HorizontalAlignment="Left" Height="16" Margin="65,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="55,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="60,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B"/>
+    </Grid>
+</Window>
+    
