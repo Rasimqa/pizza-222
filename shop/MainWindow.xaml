@@ -12,12 +12,35 @@
             <RowDefinition Height="205*"/>
             <RowDefinition Height="429*"/>
         </Grid.RowDefinitions>
-        <Rectangle HorizontalAlignment="Center" Height="452" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" Stroke="#FF8E7979" Fill="#FFD6D6D6" Grid.RowSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="452" Margin="10,10,0,0" VerticalAlignment="Top" Width="654" Stroke="#FF8E7979" Fill="#FFD6D6D6" Grid.RowSpan="2"/>
         <Rectangle HorizontalAlignment="Left" Height="150" Margin="42,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8"/>
-        <Image HorizontalAlignment="Left" Height="75" Margin="54,45,0,0" VerticalAlignment="Top" Width="75" Source="IMG/margarita.png"/>
+        <Image x:Name="Margarita" HorizontalAlignment="Left" Height="75" Margin="54,45,0,0" VerticalAlignment="Top" Width="75" Source="IMG/margarita.png"/>
         <TextBlock x:Name="MRGT" HorizontalAlignment="Left" Height="16" Margin="65,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55"/>
         <TextBlock HorizontalAlignment="Left" Height="21" Margin="55,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8"/>
         <TextBlock HorizontalAlignment="Left" Height="18" Margin="60,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B"/>
+        <Button Content="Add card" HorizontalAlignment="Left" Height="23" Margin="680,120,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_AddCard"/>
+        <TextBox x:Name="AddPiz" HorizontalAlignment="Left" Height="23" Margin="680,0,0,0" TextWrapping="Wrap" Text="Name Pizza" VerticalAlignment="Center" Width="87" TextChanged="TextBox_TextChanged"/>
+        <Label Content="1. Gribnaya&#xD;&#xA;2. Myasnaya&#xD;&#xA;3. Cheese&#xD;&#xA;4. Foursezone" HorizontalAlignment="Left" Margin="680,10,0,0" VerticalAlignment="Top" Height="76" Width="87"/>
+        <Rectangle x:Name="pizza1" HorizontalAlignment="Left" Height="150" Margin="161,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8" Opacity="0"/>
+        <Image x:Name="IMG1" HorizontalAlignment="Left" Height="75" Margin="173,45,0,0" VerticalAlignment="Top" Width="75" Source="/IMG/margarita.png" Opacity="0"/>
+        <TextBlock x:Name="pizza1_name" HorizontalAlignment="Left" Height="16" Margin="184,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55" Opacity="0"/>
+        <TextBlock x:Name="pizza1_text" HorizontalAlignment="Left" Height="21" Margin="174,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8" Opacity="0"/>
+        <TextBlock x:Name="pizza1_price" HorizontalAlignment="Left" Height="18" Margin="179,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B" Opacity="0"/>
+        <Rectangle x:Name="pizza2" HorizontalAlignment="Left" Height="150" Margin="284,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8" Opacity="1"/>
+        <Image x:Name="Margarita_Copy1" HorizontalAlignment="Left" Height="75" Margin="296,45,0,0" VerticalAlignment="Top" Width="75" Source="/IMG/margarita.png" Opacity="1"/>
+        <TextBlock x:Name="MRGT_Copy1" HorizontalAlignment="Left" Height="16" Margin="307,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="297,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8" Opacity="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="302,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B" Opacity="1"/>
+        <Rectangle x:Name="pizza3" HorizontalAlignment="Left" Height="150" Margin="409,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8" Opacity="1"/>
+        <Image x:Name="Margarita_Copy2" HorizontalAlignment="Left" Height="75" Margin="421,45,0,0" VerticalAlignment="Top" Width="75" Source="/IMG/margarita.png" Opacity="1"/>
+        <TextBlock x:Name="MRGT_Copy2" HorizontalAlignment="Left" Height="16" Margin="432,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55" Opacity="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="422,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8" Opacity="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="427,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B" Opacity="1"/>
+        <Rectangle x:Name="pizza4" HorizontalAlignment="Left" Height="150" Margin="536,34,0,0" Stroke="#FFC72424" VerticalAlignment="Top" Width="100" StrokeThickness="2" Fill="#FFE8E8E8" Opacity="1"/>
+        <Image x:Name="Margarita_Copy3" HorizontalAlignment="Left" Height="75" Margin="548,45,0,0" VerticalAlignment="Top" Width="75" Source="/IMG/margarita.png" Opacity="1"/>
+        <TextBlock x:Name="MRGT_Copy3" HorizontalAlignment="Left" Height="16" Margin="559,120,0,0" TextWrapping="Wrap" Text="Margarita" VerticalAlignment="Top" Width="55" Opacity="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="549,141,0,0" TextWrapping="Wrap" Text="Best pizza in the World" VerticalAlignment="Top" Width="75" FontSize="8" Opacity="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="554,162,0,0" TextWrapping="Wrap" Text="Price: 10$" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FFFF0B0B" Opacity="1"/>
     </Grid>
 </Window>
     
